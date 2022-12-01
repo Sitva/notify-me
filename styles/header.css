@@ -1,0 +1,128 @@
+.header {
+    background-color: #30399C;
+    height: 300px;  
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: background-color 1s;
+}
+
+.header.dark {
+    background-color: #30399C; 
+}
+
+.header.light {
+    background-color: gray;
+}
+
+.header-text-big {
+    font-size: 100px;
+    font-weight: 600;
+    transition: color 1s;
+}
+
+.header-text-big.dark {
+    color: white;
+}
+
+.header-text-big.light {
+    color: black;
+}
+
+.header-text-small {
+    font-size: 26px;
+    margin-top: -10px;
+    font-weight: 600;
+    transition: color 1s;
+}
+
+.header-text-small.dark {
+    color: white;
+}
+
+.header-text-small.light {
+    color: black;
+}
+
+.dark-theme-switcher {
+    position: absolute;
+    z-index: 100;
+    top: 30px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.15s;
+    transition: filter 0.15s;
+    cursor: pointer;
+}
+
+.dark-theme-switcher.dark {
+    background-color: #13173E;
+}
+
+.dark-theme-switcher.dark:hover {
+    filter: invert(1);
+    background-color: black;
+}
+
+.dark-theme-switcher.light {
+    filter: invert(1);
+    background-color: black;
+}
+
+.dark-theme-switcher.light:hover {
+    filter: invert(0);
+    background-color: #13173E;
+}
+
+
+.light-theme-switcher {
+    background-color: white;
+    position: absolute;
+    z-index: 50;
+    top: 30px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1s;
+}
+
+.light-theme-switcher.is-active {
+    display: flex;
+}
+
+.light-theme-switcher:hover {
+    background-color: rgb(189, 189, 189);
+}
+
+.theme-img {
+    height: 40px;
+}
+
+.theme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    transition: invert 1s;
+}
+
+/* .theme:hover {
+    filter: invert(1);
+} */
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NotifyMe</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" 
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/general.css">
+
+    <link rel="stylesheet" href="/styles/header.css">
+
+    <link rel="stylesheet" href="/styles/middle.css">
+  </head>
+  <body>
+    <div class="header dark" id="header">
+      <div class="header-text-big dark" id="logo-big">NotifyMe</div>
+
+      <div class="header-text-small dark" id="logo-small">Only notificator you need.</div> 
+    </div>  
+    
+    <div id="button" class="dark-theme-switcher dark">
+       <div class="theme"><img class="theme-img" src="/images/white_bulb.png"></div>
+    </div>
+
+    {# <div class="light-theme-switcher">
+      <div class="theme"><img class="theme-img" src="/images/black-bulb.png"></div> 
+  </div> #}
+    
+    <div class="bottom dark" id="color">
+      <div class="manual dark" id="text">
+        <div class="manual-text">
+          1.&nbsp Send "/start" to <a class="link dark" id="link" href="">Telegram Bot</a>
+        </div>
+
+        <div class="manual-text">
+          2.&nbsp Use snippets below
+        </div>
+      </div>
+
+      <div class="tabs">
+        <div class="tabs-left dark" id="tabs-left">
+          <div class="tabs-toogle is-active dark" id="tabs-content1">cURL</div>
+
+          <div class="tabs-toogle dark" id="tabs-content2">wget</div>
+
+          <div class="tabs-toogle dark" id="tabs-content3">Python</div>
+
+          <div class="tabs-toogle dark" id="tabs-content4">NodeJS</div>
+
+        </div>
+
+        <div class="tabs-right dark" id="tabs-right">
+          <div class="tabs-content is-active">
+            curl -X POST -d ‘👋 Hello from NotifyMe!’ https://notify.me/YOUR_CHAT_ID
+          </div>
+          
+          <div class="tabs-content">wget</div>
+
+          <div class="tabs-content">Python</div>
+
+          <div class="tabs-content">NodeJS</div>
+        </div>
+      </div>
+
+      <button class="donate-button dark" id="donate">Support me</button>
+
+      <script src="script.js"></script>
+      <script src="script2.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+.bottom {
+    position: absolute;
+    background-color: #13173E;
+    min-height: 500px;
+    top: 300px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    transition: background-color 1s;
+}
+
+.bottom.dark {
+    background-color: #13173E; 
+}
+
+.bottom.light {
+    background-color: rgb(223, 222, 222);
+}
+
+.manual {
+    font-weight: 400;
+    font-size: 18px;
+    transition: color 1s;
+}
+
+.manual.dark {
+    color: white;
+}
+
+.manual.light {
+    color: black;
+}
+
+.link {
+    transition: color 1s;
+}
+
+.link.dark {
+    color: white;
+}
+
+.link.light {
+    color: black
+}
+
+.tabs {
+    display: flex;
+    height: 261px;
+    width: 910px;
+    color: white;
+    
+}
+
+.tabs-left {
+    flex: 0.3;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: #30399C;
+    font-size: 33px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: color 1s;
+    transition: background-color 1s;
+}
+
+.tabs-left.dark {
+    background-color: #30399C;
+    color: white;
+}
+
+.tabs-left.light {
+    background-color: lightgray;
+    color: black;
+}
+
+.tabs-toogle {
+    width: 211px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.tabs-toogle.dark:hover {
+    background-color: #4a56df;
+}
+
+.tabs-toogle.light:hover {
+    background-color: rgb(201, 201, 201);
+}
+
+.tabs-toogle.is-active {
+    transition: background-color 1s; 
+}
+
+.tabs-toogle.is-active:hover {
+    transition: background-color -1s; 
+}
+
+.tabs-toogle.is-active.dark {
+   background-color: #22286D;
+    
+}
+
+.tabs-toogle.is-active.light {
+    background-color: gray;
+    
+}
+
+.tabs-right {
+    flex: 1;
+    background-color: #22286D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: background-color 1s;
+    color: white;
+}
+
+.tabs-right.dark {
+    background-color: #22286D;
+    color: white;
+}
+
+.tabs-right.light {
+    background-color: gray;
+    color:black;
+}
+
+.donate-button {
+    font-size: 33px;
+    background-color: #30399C;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-width: 0px;
+    border-radius: 5px;
+    
+}
+
+.donate-button:hover {
+    transition: background-color -0.75;
+    cursor: pointer;
+}
+
+.donate-button.dark {
+    background-color: #30399C;
+    color: white;
+    transition: background-color 1s;
+    transition: color 1s;
+}
+
+.donate-button.dark:hover {
+    background-color: #4a56df;
+}
+
+.donate-button.light {
+    background-color: gray;
+    color: black;
+    transition: background-color 1s;
+    transition: color 1s;
+}
+
+.donate-button.light:hover {
+    background-color: rgb(148, 148, 148);
+}
+
+.tabs-content {
+    display: none;
+    transition: color 1s;
+}
+
+.tabs-content.is-active {
+    display: block; 
+    transition: color 1s;
+}
+
+
+
